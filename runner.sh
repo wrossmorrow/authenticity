@@ -1,5 +1,11 @@
 #!/bin/bash
-mkdir -p bootstrap/12318 ; python idLogit.py ../wikisurvey_12318_votes_2018-04-03T12_19_39Z.csv 12318 2> bootstrap/12318/error.log > bootstrap/12318/info.log &
-mkdir -p bootstrap/12319 ; python idLogit.py ../wikisurvey_12319_votes_2018-04-03T12_20_13Z.csv 12319 2> bootstrap/12319/error.log > bootstrap/12319/info.log &
-mkdir -p bootstrap/12383 ; python idLogit.py ../wikisurvey_12383_votes_2018-04-03T12_19_54Z.csv 12383 2> bootstrap/12383/error.log > bootstrap/12383/info.log &
-mkdir -p bootstrap/12384 ; python idLogit.py ../wikisurvey_12384_votes_2018-04-02T22_29_48Z.csv 12384 2> bootstrap/12384/error.log > bootstrap/12384/info.log &
+SURVEY_DATA_DIR=".."
+RESULTS_OUT_DIR="runs/bootstrap"
+RESULTS_LOG_DIR="runs/logs"
+for L in "12318" "12319" "12383" "12384" ; do 
+	mkdir -p ${RESULTS_OUT_DIR}/${L}
+	INFILE="${SURVEY_DATA_DIR}/wikisurvey_${L}_votes_2018-04-03T12_19_39Z.csv"
+	python idLogit.py ${INFILE} ${L} \
+		2> ${RESULTS_LOG_DIR}/${L}/error.log \
+		 > ${RESULTS_LOG_DIR}/${L}/info.log &
+done

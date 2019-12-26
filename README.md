@@ -1,7 +1,7 @@
 
 This repo is a very, very brief sample of some code and analysis corresponding to the `idLogit` method described in [these slides](https://docs.google.com/presentation/d/1NAkj0c1H5kCUv64mC1v8n3oH56OmHViUlNSkSSnIe-k/edit), as applied to [Carroll](https://www.gsb.stanford.edu/faculty-research/faculty/glenn-r-carroll) & [Verhaal](https://business.tulane.edu/faculty-research/faculty-profile.php?idkey=448)'s "Authentic Distilleries" binary choice data. This case study discussed briefly in the slides starting at slide 58. 
 
-I recommend simply reviewing the `bootstrap.ipynb` file for an overview. However this file simply analyzes data and results, and does not contain any of the analysis itself. If you want to see how the analysis was done, review `idLogit.py` and `runner.sh`. 
+I recommend simply reviewing the [`bootstrap.ipynb`](bootstrap.ipynb) file for an overview. However this file simply analyzes data and results, and does not contain any of the analysis itself. If you want to see how the analysis was done, review [`idLogit.py`](idLogit.py) and [`runner.sh`](runner.sh). 
 
 **NOTE:** _Running this code requires the underlying data_ and/or results. The underlying data I am not authorized to provide, and the results from statistical estimation aren't particularly suitable for inclusion in a repo. Reach out to me at [morrowwr@gmail.com](mailto:morrowwr@gmail.com) if you are interested. 
 

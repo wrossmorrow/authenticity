@@ -3,5 +3,5 @@ This repo is a very, very brief sample of some code and analysis corresponding t
 
 I recommend simply reviewing the `bootstrap.ipynb` file for an overview. However this file simply analyzes data and results, and does not contain any of the analysis itself. If you want to see how the analysis was done, review `idLogit.py` and `runner.sh`. 
 
-Running this code requires the underlying data, which I am not authorized to provide. Reach out to me at [morrowwr@gmail.com](mailto:morrowwr@gmail.com) if you are interested. 
+**NOTE:** _Running this code requires the underlying data_ and/or results. The underlying data I am not authorized to provide, and the results from statistical estimation aren't particularly suitable for inclusion in a repo. Reach out to me at [morrowwr@gmail.com](mailto:morrowwr@gmail.com) if you are interested. 
 

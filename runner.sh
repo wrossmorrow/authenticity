@@ -1,6 +1,6 @@
 #!/bin/bash
 SURVEY_DATA_DIR=".."
-RESULTS_OUT_DIR="runs/bootstrap"
+RESULTS_OUT_DIR="runs/results/bootstrap"
 RESULTS_LOG_DIR="runs/logs"
 for L in "12318" "12319" "12383" "12384" ; do 
 	mkdir -p ${RESULTS_OUT_DIR}/${L}

@@ -244,7 +244,7 @@ if __name__ == "__main__" :
 	print( LR.shape , LR.dtype )
 	print( y.shape , y.dtype )
 	
-	# put in actual estimates... write to "actual/..."
+	# put in "actual" estimates... write to "actual/..."
 	
 	betas , delta , loglk , success = trace_idLogit( I , A , N , inds , LR , y )
 	
